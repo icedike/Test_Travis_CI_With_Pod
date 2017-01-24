@@ -1,0 +1,4 @@
+language: objective-c
+osx_image: xcode8
+script:
+ - xcodebuild -workspace Test_Travis_CI_With_Pod.xcworkspace -scheme Test_Travis_CI_With_Pod -sdk iphonesimulator build
