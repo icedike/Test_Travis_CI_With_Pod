@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let test = ["test":"Mark"]
+        
+        let test2 = JSON(test)
+        print("this is test2 \(test2["test"].stringValue)")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
